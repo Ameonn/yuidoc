@@ -6,8 +6,9 @@
 
 /**
  * This is the Anim Class description
+ * @namespace event.impl
  * @class Anim
- * @extends Event
+ * @extends event.Event
  * @test valeur du tag test 42
  * @fires {Event} TEST fires TEST
  */
@@ -16,12 +17,13 @@
  /**
  * @method testFires
  * @fires {Event} TEST fires TEST
- * @param {Event} event
- * @optional null
- * @param {Event} eventOptional
+ * @param {Event} [event]
+ * @param {Event} [eventOptional = null]
  * @static
  * @final
  * @deprecated
+ * @async
+ * @return {String}
  */
 
  /**

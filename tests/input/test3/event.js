@@ -1,8 +1,9 @@
 
 /**
 * Event class
+* @namespace event
 * @class Event
-* @implements IEvent
+* @extends interface.IEvent
 */
 
 
@@ -10,4 +11,10 @@
 * get event type
 * @method type
 * @return {String}
+*/
+
+/**
+* @method emit
+*
+*
 */

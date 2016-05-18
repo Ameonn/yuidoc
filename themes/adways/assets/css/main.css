@@ -378,7 +378,7 @@ th {
 
 .yui3-skin-sam .yui3-tabview-list {
     border-color: #DFDFDF;
-    border-width: 0 0 1px; 
+    border-width: 0 0 1px;
 }
 
 
@@ -426,13 +426,13 @@ abbr {
     cursor: help;
 }
 
-.prettyprint li.L0, 
-.prettyprint li.L1, 
-.prettyprint li.L2, 
-.prettyprint li.L3, 
-.prettyprint li.L5, 
-.prettyprint li.L6, 
-.prettyprint li.L7, 
+.prettyprint li.L0,
+.prettyprint li.L1,
+.prettyprint li.L2,
+.prettyprint li.L3,
+.prettyprint li.L5,
+.prettyprint li.L6,
+.prettyprint li.L7,
 .prettyprint li.L8 {
     list-style: decimal;
 }
@@ -525,10 +525,15 @@ toggle button
     background-image: url('//services.adways.com/assets/img/toggle.png');
     background-repeat: no-repeat;
     background-position: 9px -57px;
-/*    -ms-transform: rotate(180deg);  IE 9 
-    -webkit-transform: rotate(180deg);  Safari 
+/*    -ms-transform: rotate(180deg);  IE 9
+    -webkit-transform: rotate(180deg);  Safari
     transform: rotate(180deg);*/
 }
 
+/* Deprecation warning. */
+.flag.deprecated {
+    background: #fdac9f;
+    border: 1px solid #fd7775;
+}
 
-
+.flag.deprecated { color: #333; }
