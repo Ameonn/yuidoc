@@ -1,0 +1,7 @@
+{
+    "name": "The Foo API",
+    "description": "The Foo API: a library for doing X, Y, and Z",
+    "options": {
+        "outdir": "./out-test"
+    }
+}
