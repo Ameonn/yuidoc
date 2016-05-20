@@ -1,11 +1,19 @@
 
+
 /**
 * Event class
 * @namespace event
 * @class Event
-* @extends interface.IEvent
+* @extends event.Base
+* @implements test.IEvent
 */
 
+/**
+* @method testBase
+*
+*
+*
+*/
 
 /**
 * get event type
@@ -14,7 +22,15 @@
 */
 
 /**
-* @method emit
+* Base class
+* @class Base
 *
 *
+*
+*/
+
+/**
+* Test base
+* @method testBase
+* @return {String} a string
 */

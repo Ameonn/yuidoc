@@ -35,12 +35,19 @@
     <div class="meta">
         {{#if overwritten_from}}
             <p>Inherited from
-                <a href="{{crossLinkRaw overwritten_from/class}}#method_{{overwritten_from/name}}">
-                {{overwritten_from/class}}
+                {{#if overwritten_from/class}}
+                    <a href="{{crossLinkRaw overwritten_from/class}}#method_{{overwritten_from/name}}">
+                    {{overwritten_from/class}}
+                  </a>
+                {{/if}}
+                {{#if overwritten_from/interface}}
+                    <a href="{{crossLinkRaw overwritten_from/interface}}#method_{{overwritten_from/name}}">
+                {{overwritten_from/interface}}
               </a>
-                {{#if foundAt}}
-                    but overwritten
-                    <!-- but overwritten in -->
+                {{/if}}
+                {{#if overwritten_from/overwritter}}
+                    but overwritten by
+                    {{#crossLink overwritten_from/overwritter}}{{/crossLink}}
                 {{/if}}
         {{else}}
             {{#if extended_from}}

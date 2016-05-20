@@ -1,27 +1,6 @@
-<!-- <div id="modules" class="sidebox">
-  <div class="hd">
-        <h2 class="no-toc">Namespaces</h2>
-    </div>
-    <div class="bd">
-        <ul>
-            {{#modules}}
-                <li><a href="{{../projectRoot}}modules/{{name}}.html">{{displayName}}</a>
-                {{#if submodules}}
-                    <ul>
-                        {{#submodules}}
-                            <li><a href="{{../../../projectRoot}}modules/{{../name}}.html#{{displayName}}">{{displayName}}</a></li>
-                        {{/submodules}}
-                    </ul>
-                {{/if}}
-                </li>
-            {{/modules}}
-        </ul>
-    </div>
-</div>-->
-
 <div id="classes" class="sidebox">
     <div class="hd">
-        <h2 class="no-toc">Classes & Interfaces</h2>
+        <h2 class="no-toc">Classes</h2>
     </div>
     <div class="bd">
         <ul>
@@ -31,34 +10,19 @@
         </ul>
     </div>
 </div>
-<!--<div id="interfaces" class="sidebox">
+<div id="interfaces" class="sidebox">
     <div class="hd">
         <h2 class="no-toc">Interfaces</h2>
     </div>
     <div class="bd">
         <ul>
-            {{#classes}}
-                {{#if interface}}
-                        <li><a href="{{../projectRoot}}classes/{{name}}.html">{{displayName}}</a></li>
-                {{/if}}
-            {{/classes}}
-        </ul>
-    </div>
-</div>-->
-<!--
-<div id="elements" class="sidebox">
-    <div class="hd">
-        <h2 class="no-toc">Elements</h2>
-    </div>
-    <div class="bd">
-        <ul>
-            {{#elements}}
-                <li><a href="{{../projectRoot}}elements/{{name}}.html">{{displayName}}</a></li>
-            {{/elements}}
+            {{#interfaces}}
+                <li><a href="{{../projectRoot}}interfaces/{{name}}.html">{{displayName}}</a></li>
+            {{/interfaces}}
         </ul>
     </div>
 </div>
--->
+
 {{#if methods}}
     <div id="methods-on-page" class="sidebox on-page">
         <div class="hd">

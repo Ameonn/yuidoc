@@ -1,18 +1,16 @@
+
 /**
+ * This is the Anim Class description
+ * @interface Anim
+ * @extends test.IEvent
+ * @fires {Event} TEST fires TEST
+ */
+
+ /**
  * This is the Anim MODULE description
  * @main anim
  * @module anim
  */
-
-/**
- * This is the Anim Class description
- * @namespace event.impl
- * @class Anim
- * @extends event.Event
- * @test valeur du tag test 42
- * @fires {Event} TEST fires TEST
- */
-
 
  /**
  * @method testFires
@@ -49,6 +47,35 @@
  * @return {Anim}
  * @static
  */
+
+ /**
+  * @method emit
+
+  */
+
+
+/**
+* Poney class
+* @class Poney
+*
+*
+*/
+
+/**
+* @method testPoney
+*
+*
+*/
+
+/**
+* @interface SuperAnim
+* @extends Anim
+*/
+
+/**
+* @interface SuperSuperAnim
+* @extends SuperAnim
+*/
 
 
 /**

@@ -1,7 +1,7 @@
 /**
-* @namespace interface
-* @class IEvent
-*
+* Desc
+* @interface IEvent
+* @namespace test
 *
 *
 */
