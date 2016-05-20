@@ -34,3 +34,11 @@
 * @method testBase
 * @return {String} a string
 */
+
+
+/**
+* @class TestableEvent
+* @extends event.Base
+* @implements test.IEvent
+* @implements test.ITestable
+*/

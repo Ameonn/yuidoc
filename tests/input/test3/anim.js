@@ -55,14 +55,14 @@
 
 
 /**
-* Poney class
-* @class Poney
-*
+* class that extends a class with two implement and one extends
+* @class TestSubClassImplement
+* @extends event.TestableEvent
 *
 */
 
 /**
-* @method testPoney
+* @method testImpl
 *
 *
 */

@@ -20,7 +20,9 @@
 {{/if}}
 {{#if implements}}
     Implements:
-    {{#crossLink implements}}{{/crossLink}}
+    {{#each implements}}
+        {{#crossLink this}}{{/crossLink}}
+    {{/each}}
     <br>
 {{/if}}
 <!--<span class="foundat">Class defined in: <a href="{{foundAt}}">`{{file}}:{{line}}`</a></span>-->
