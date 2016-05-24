@@ -42,3 +42,19 @@
 * @implements test.IEvent
 * @implements test.ITestable
 */
+
+/**
+* @namespace event.subevent
+*
+*/
+
+/**
+* @class SubTestEvent
+* @extends event.TestableEvent
+*
+*/
+
+/**
+* @method subTestMethod
+*
+*/
