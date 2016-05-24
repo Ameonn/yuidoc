@@ -5,7 +5,7 @@
 * @namespace event
 * @class Event
 * @extends event.Base
-* @implements test.IEvent
+* @implements event.IEvent
 */
 
 /**
@@ -23,6 +23,7 @@
 
 /**
 * Base class
+* line 2
 * @class Base
 *
 *
@@ -39,7 +40,7 @@
 /**
 * @class TestableEvent
 * @extends event.Base
-* @implements test.IEvent
+* @implements event.IEvent
 * @implements test.ITestable
 */
 

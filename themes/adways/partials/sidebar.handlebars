@@ -23,6 +23,19 @@
     </div>
 </div>
 
+<div id="namespaces" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Namespaces</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            {{#namespaces}}
+                <li><a href="{{../projectRoot}}namespaces/{{name}}.html">{{name}}</a></li>
+            {{/namespaces}}
+        </ul>
+    </div>
+</div>
+
 {{#if methods}}
     <div id="methods-on-page" class="sidebox on-page">
         <div class="hd">

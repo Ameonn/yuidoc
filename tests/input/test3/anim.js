@@ -2,7 +2,7 @@
 /**
  * This is the Anim Class description
  * @interface Anim
- * @extends test.IEvent
+ * @extends event.IEvent
  * @fires {Event} TEST fires TEST
  */
 
