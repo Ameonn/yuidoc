@@ -4,7 +4,7 @@
 <div class="yui3-g">
     <div class="yui3-u-1-2">
         {{#if moduleClasses}}
-            <p>This namespace has the following classes:</p>
+            <p>This module has the following classes:</p>
             <ul>
                 {{#moduleClasses}}
                     <li><a href="{{../projectRoot}}classes/{{name}}.html">{{displayName}}</a></li>
@@ -14,7 +14,7 @@
     </div>
     <div class="yui3-u-1-2">
         {{#if moduleElements}}
-            <p>This namespace has the following elements:</p>
+            <p>This module has the following elements:</p>
             <ul>
                 {{#moduleElements}}
                     <li><a href="{{../projectRoot}}elements/{{name}}.html">{{displayName}}</a></li>
@@ -24,7 +24,7 @@
     </div>
     <div class="yui3-u-1-2">
         {{#if moduleInterfaces}}
-            <p>This namespace has the following interfaces:</p>
+            <p>This module has the following interfaces:</p>
             <ul>
                 {{#moduleInterfaces}}
                     <li><a href="{{../projectRoot}}interfaces/{{name}}.html">{{displayName}}</a></li>
@@ -34,7 +34,7 @@
     </div>
     <div class="yui3-u-1-2">
         {{#if subModules}}
-            <p>This namespace has the following namespaces:</p>
+            <p>This module has the following modules:</p>
             <ul>
                 {{#subModules}}
                     <li id="{{name}}"><a href="{{../projectRoot}}modules/{{name}}.html">{{displayName}}</a>
@@ -47,4 +47,3 @@
 </div>
 <br>
 <br>
-<!--<span class="foundat">Namespace description found: <a href="{{foundAt}}">`{{file}}:{{line}}`</a></span>-->
