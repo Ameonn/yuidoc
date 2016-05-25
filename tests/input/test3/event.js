@@ -6,6 +6,7 @@
 * @class Event
 * @extends event.Base
 * @implements event.IEvent
+* @abstract
 */
 
 /**
@@ -19,6 +20,7 @@
 * get event type
 * @method type
 * @return {String}
+* @abstract
 */
 
 /**
