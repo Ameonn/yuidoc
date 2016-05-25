@@ -1,0 +1,50 @@
+<h4>Namespace: {{name}}</h4>
+<div class="intro">{{{description}}}</div>
+
+<div>
+    <div class="yui3-u-1-2">
+        {{#if namespaceClasses}}
+            <p>Classes:</p>
+            <ul>
+                {{#namespaceClasses}}
+                    <li><a href="{{../projectRoot}}classes/{{.}}.html">{{.}}</a></li>
+                {{/namespaceClasses}}
+            </ul>
+        {{/if}}
+    </div>
+    <div class="yui3-u-1-2">
+        {{#if namespaceInterfaces}}
+            <p>Interfaces:</p>
+            <ul>
+                {{#namespaceInterfaces}}
+                    <li><a href="{{../projectRoot}}interfaces/{{.}}.html">{{.}}</a></li>
+                {{/namespaceInterfaces}}
+            </ul>
+        {{/if}}
+    </div>
+    <div class="yui3-u-1-2">
+        {{#if namespaceSubNamespaces}}
+            <p>Namespaces:</p>
+            <ul>
+                {{#namespaceSubNamespaces}}
+                    <li id="{{.}}"><a href="{{../projectRoot}}namespaces/{{.}}.html">{{.}}</a>
+                    </li>
+                {{/namespaceSubNamespaces}}
+            </ul>
+        {{/if}}
+    </div>
+    <div>
+        {{#if namespaceProperties}}
+            <p>Properties:</p>
+            <ul>
+                {{#namespaceProperties}}
+                    <li id="{{name}}">
+                        {{>props}}
+                    </li>
+                {{/namespaceProperties}}
+            </ul>
+        {{/if}}
+    </div>
+</div>
+<br>
+<br>
