@@ -1,10 +1,20 @@
 <a name="props_{{name}}"></a>
 <div class="props item">
-    `{{name}}` &lt;<strong>{{#crossLink type}}{{/crossLink}}</strong>&gt;{{#if final}} <em>(final)</em>{{/if}}{{#if static}} <em>(static)</em>{{/if}}<br>
+    `{{name}}` &lt;<strong>{{#crossLink type}}{{/crossLink}}</strong>&gt;
+    {{#if final}} <em>(final)</em>{{/if}}
+    {{#if static}} <em>(static)</em>{{/if}}
+    <br>
     <!--<span class="foundat"><a href="{{foundAt}}">`{{file}}:{{line}}`</a></span>-->
     {{{propertyDescription}}}
+    <ul>
+        {{#values}}
+            <li>
+                <p>{{{name}}}</p>
+                <p>{{{description}}}</p>
+            </li>
+        {{/values}}
+    </ul>
     {{#if example}}
-        <h5>Example</h5>
-        {{{example}}}
+        <h5>Example</h5> {{{example}}}
     {{/if}}
 </div>

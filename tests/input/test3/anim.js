@@ -36,9 +36,11 @@
 */
 
 /**
-* @property AN_ENUM
-* @param {TEST} 1
-* @param {TEST2} 2
+* @enum {AN_ENUM} Desc an enum
+* @value {DEFINE_1} Use for define 1
+* @value {DEFINE_2} Use for define 2
+* @value {DEFINE_3}
+* @value {DEFINE_4} Use for define 4
 */
 
 /**

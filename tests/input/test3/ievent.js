@@ -6,6 +6,13 @@
 */
 
 /**
+* @enum {A_NAMESPACE_ENUM} An enum associated to a namespace outside a class or interface
+* @value {INFINITY} infinit value
+* @value {PI}
+* @value {TEST} test description
+*/
+
+/**
 * Desc
 * @interface IEvent
 *
