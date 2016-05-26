@@ -152,7 +152,7 @@ suite.add(new YUITest.TestCase({
         suite.builder.renderClass(function (html, view, opts) {
             var method;
             opts.meta.methods.forEach(function (i) {
-                if (i.name === 'myMethod' && i.class === 'mywidget.SubWidget') {
+                if (i.name === 'myMethod') {
                     method = i;
                 }
             });
@@ -167,7 +167,7 @@ suite.add(new YUITest.TestCase({
         suite.builder.renderClass(function (html, view, opts) {
             var method;
             opts.meta.methods.forEach(function (i) {
-                if (i.name === 'getTargets2' && i.class === 'mywidget.SuperWidget') {
+                if (i.name === 'getTargets2') {
                     method = i;
                 }
             });
@@ -183,7 +183,7 @@ suite.add(new YUITest.TestCase({
         suite.builder.renderClass(function (html, view, opts) {
             var method;
             opts.meta.methods.forEach(function (i) {
-                if (i.name === 'getTargets3' && i.class === 'mywidget.SuperWidget') {
+                if (i.name === 'getTargets3') {
                     method = i;
                 }
             });

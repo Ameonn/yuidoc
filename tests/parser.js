@@ -40,11 +40,11 @@ suite.add(new YUITest.TestCase({
         this.data = suite.data;
     },
     findByName: function (name, cl) {
-        var items = this.data.classitems,
+        var items = this.data.classes[cl].items,
             ret;
 
         items.forEach(function (i) {
-            if (i.name === name && i.class === cl) {
+            if (i.name === name) {
                 ret = i;
             }
         });
@@ -59,8 +59,8 @@ suite.add(new YUITest.TestCase({
     },
     'test: parser': function () {
         var keys = Object.keys(this.data);
-        Assert.areEqual(10, keys.length, 'Failed to populate all fields');
-        ArrayAssert.itemsAreSame(['project', 'files', 'modules', 'classes', 'elements', 'classitems', 'interfaces', 'interfaceitems', 'namespaces', 'warnings'], keys, 'Object keys are wrong');
+        Assert.areEqual(8, keys.length, 'Failed to populate all fields');
+        ArrayAssert.itemsAreSame(['project', 'files', 'modules', 'classes', 'elements', 'interfaces', 'namespaces', 'warnings'], keys, 'Object keys are wrong');
     },
     'test: project data': function () {
         Assert.areSame(path.normalize('input/test/test.js'), this.project.file, 'Project data loaded from wrong file');
@@ -268,12 +268,11 @@ suite.add(new YUITest.TestCase({
         Assert.isNotUndefined(cl['P.storage.LocalStore'], 'Should not have double namespaces');
     },
     'test: classitems parsing': function () {
-        Assert.isArray(this.data.classitems, 'Failed to populate classitems array');
+        Assert.isArray(this.data.classes['myclass'].items, 'Failed to populate classitems array');
         var keys, item, item2;
 
         item = this.findByName('testoptional', 'myclass');
         Assert.areSame('testoptional', item.name, 'Failed to find item: testoptional');
-        Assert.areSame('myclass', item.class, 'Failed to find class: testoptional');
         Assert.areSame('mymodule', item.module, 'Failed to find module: testoptional');
         Assert.areSame('mysubmodule', item.submodule, 'Failed to find submodule: testoptional');
         Assert.areSame('method', item.itemtype, 'Should be a method');
@@ -290,7 +289,6 @@ suite.add(new YUITest.TestCase({
             'return',
             'throws',
             'example',
-            'class',
             'module',
             'submodule'
         ];
@@ -403,7 +401,6 @@ suite.add(new YUITest.TestCase({
 
         item = this.findByName('testobjectparam', 'myclass');
         Assert.areSame('testobjectparam', item.name, 'Failed to find item: testobjectparam');
-        Assert.areSame('myclass', item.class, 'Failed to find class: testobjectparam');
         Assert.areSame('mymodule', item.module, 'Failed to find module: testobjectparam');
         Assert.areSame('mysubmodule', item.submodule, 'Failed to find submodule: testobjectparam');
         Assert.areSame('method', item.itemtype, 'Should be a method');
