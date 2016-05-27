@@ -11,9 +11,6 @@
 
 /**
 * @method testBase
-*
-*
-*
 */
 
 /**
@@ -35,6 +32,7 @@
 /**
 * Test base
 * @method testBase
+* @param {event.A_KIND} kind
 * @return {String} a string
 */
 

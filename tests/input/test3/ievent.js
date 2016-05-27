@@ -13,6 +13,10 @@
 */
 
 /**
+* @kind {A_KIND} a kind description
+*/
+
+/**
 * Desc
 * @interface IEvent
 *
