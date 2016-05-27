@@ -18,6 +18,22 @@
     {{#crossLink extends}}{{/crossLink}}
     <br>
 {{/if}}
+
+{{#fires}}
+    <div class="fires">
+        <strong>Fires:</strong>
+        {{#if type}}
+            <span class="type">&lt;{{#crossLink type}}{{/crossLink}}&gt;</span>:
+        {{/if}}
+        {{#if kind}}
+            of kind <span class="type">{{#crossLink kind}}{{/crossLink}}</span>:
+        {{/if}}
+        {{#if description}}
+            {{{description}}}
+        {{/if}}
+    </div>
+{{/fires}}
+
 <div class="intro">{{{interfaceDescription}}}</div>
 
 {{#if is_constructor}}

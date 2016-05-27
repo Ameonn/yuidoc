@@ -25,7 +25,20 @@
     {{/each}}
     <br>
 {{/if}}
-<!--<span class="foundat">Class defined in: <a href="{{foundAt}}">`{{file}}:{{line}}`</a></span>-->
+{{#fires}}
+    <div class="fires">
+        <strong>Fires:</strong>
+        {{#if type}}
+            <span class="type">&lt;{{#crossLink type}}{{/crossLink}}&gt;</span>:
+        {{/if}}
+        {{#if kind}}
+            of kind <span class="type">{{#crossLink kind}}{{/crossLink}}</span>:
+        {{/if}}
+        {{#if description}}
+            {{{description}}}
+        {{/if}}
+    </div>
+{{/fires}}
 <div class="intro">{{{classDescription}}}</div>
 
 {{#if is_constructor}}

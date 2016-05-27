@@ -3,7 +3,8 @@
  * This is the Anim Class description
  * @interface Anim
  * @extends event.IEvent
- * @fires {Event} TEST fires TEST
+ * @fires {Event} event.A_KIND fires description
+ * @fires {Event42} event.A_KIND fires description 42
  */
 
  /**
@@ -15,6 +16,7 @@
  /**
  * @method testFires
  * @fires {Event} event.A_KIND fires description
+ * @fires {Event404} event.A_KIND fires description 404
  * @param {Event} [event]
  * @param {Event} [eventOptional = null]
  * @static
