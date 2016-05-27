@@ -14,7 +14,7 @@
 
  /**
  * @method testFires
- * @fires {Event} TEST fires TEST
+ * @fires {Event} event.A_KIND fires description
  * @param {Event} [event]
  * @param {Event} [eventOptional = null]
  * @static
