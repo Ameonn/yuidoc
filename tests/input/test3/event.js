@@ -53,11 +53,16 @@
 
 /**
 * @class SubTestEvent
-* @extends event.TestableEvent
+* @extends event.subevent.TestableEvent
 *
 */
 
 /**
 * @method subTestMethod
-*
+* @return {Anim.AN_ENUM.DEFINE_1} an enum
+*/
+
+/**
+* @method testReturnNamespaceEnum
+* @return {event.A_NAMESPACE_ENUM.INFINITY} infinity
 */

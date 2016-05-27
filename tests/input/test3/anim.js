@@ -30,12 +30,6 @@
 */
 
 /**
-* @property
-*
-*
-*/
-
-/**
 * @enum {AN_ENUM} Desc an enum
 * @value {DEFINE_1} Use for define 1
 * @value {DEFINE_2} Use for define 2
