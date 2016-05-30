@@ -15,6 +15,17 @@
 
 /**
 * @class Void
+* @nested event.Event
+*/
+
+/**
+* @class Legacy
+* @nested event.Event
+*/
+
+/**
+* @class SubVoid
+* @nested event.Event.Void
 */
 
 /**

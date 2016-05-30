@@ -34,3 +34,8 @@
 *@param {function} callback
 *
 */
+
+/**
+* @interface NestedTest
+* @nested IEvent
+*/

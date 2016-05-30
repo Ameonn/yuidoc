@@ -1,4 +1,4 @@
-<h4>{{#if abstract}}Abstract {{/if}}Class {{moduleName}}</h4>
+<h4>{{#if abstract}}Abstract {{/if}}Class {{moduleName}}{{#if nestedOf}} nested of {{#crossLink nestedOf}}{{{nestedOf}}}{{/crossLink}}{{/if}}</h4>
 {{#if uses}}
     Uses:
     {{#each uses}}
@@ -40,6 +40,14 @@
     </div>
 {{/fires}}
 <div class="intro">{{{classDescription}}}</div>
+
+{{#if nested}}
+    <p>Nested classes:
+        {{#nested}}
+            {{#crossLink this}}{{{this}}}{{/crossLink}},
+        {{/nested}}
+    </p>
+{{/if}}
 
 {{#if is_constructor}}
     {{#is_constructor}}
@@ -92,4 +100,6 @@
             </div>
         {{/if}}
     </div>
+</div>
+</div>
 </div>
