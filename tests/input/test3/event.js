@@ -2,8 +2,8 @@
 
 /**
 * Event class
-* @namespace event
 * @class Event
+* @namespace event
 * @extends event.Base
 * @implements event.IEvent
 * @abstract
@@ -14,8 +14,13 @@
 */
 
 /**
+* @class Void
+*/
+
+/**
 * get event type
 * @method type
+* @for event.Event
 * @return {String}
 * @abstract
 */

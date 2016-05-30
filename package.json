@@ -76,7 +76,8 @@
     "scripts": {
         "pretest": "eslint lib/*.js tests/*.js",
         "test": "istanbul cover --print=both --yui ./node_modules/ytestrunner/lib/cli.js -- --include ./tests/options.js --include ./tests/builder.js --include ./tests/parser.js --include ./tests/parser_coffee.js --include ./tests/files.js --include ./tests/utils.js --include ./tests/preprocessor.js",
-        "compile": "node ./lib/cli.js ./tests/input/test3/ -c ./tests/yuidoc-adways-theme.json"
+        "compile": "node ./lib/cli.js ./tests/input/test3/ -c ./tests/yuidoc-adways-theme.json",
+        "prod": "node ./lib/cli.js ../../AdwaysLib.js/yuidoc/interactive ../../AdwaysLib.js/output/interactive%20-%20release/release.Adways.js -c ./tests/yuidoc-adways-theme.json"
     },
     "preferGlobal": "true",
     "license": "BSD-3-Clause",
