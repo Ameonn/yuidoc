@@ -18,8 +18,9 @@
 
 /**
 * Desc
-* @interface IEvent
 *
+* @interface IEvent
+* @namespace event
 *
 */
 
