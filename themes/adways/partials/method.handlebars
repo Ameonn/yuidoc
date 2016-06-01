@@ -53,6 +53,10 @@
                     but overwritten by
                     {{#crossLink overwritten_from/overwritter}}{{/crossLink}}
                 {{/if}}
+                {{#if overwritten_from/implementer}}
+                    , implemented by
+                    {{#crossLink overwritten_from/implementer}}{{/crossLink}}
+                {{/if}}
         {{else}}
             {{#if extended_from}}
                 <p>Inherited from
