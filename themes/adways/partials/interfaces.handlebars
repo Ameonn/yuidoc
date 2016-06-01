@@ -39,7 +39,9 @@
 {{#if nested}}
     <p>Nested classes:
         {{#nested}}
-            {{#crossLink this}}{{{this}}}{{/crossLink}},
+            {{#crossLink this}}
+                {{#basicName this}}{{/basicName}}
+            {{/crossLink}},
         {{/nested}}
     </p>
 {{/if}}
