@@ -1,0 +1,16 @@
+{
+    "name": "The Foo API",
+    "description": "The Foo API: a library for doing X, Y, and Z",
+    "options": {
+        "paths": [
+            "../AdwaysLib.js/output/experience - release/",
+            "../AdwaysLib.js/output/interactive - release/",
+            "../AdwaysLib.js/yuidoc/interactive"
+        ],
+        "outdir": "./out-theme",
+        "themedir": "./themes/adways",
+        "helpers": [
+            "./themes/adways/assets/js/basic-name.js"
+        ]
+    }
+}
