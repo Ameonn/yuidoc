@@ -1,12 +1,9 @@
-////////////////////////////
-// script toggle sidebox
-///////////////////////////
 var toggleSideBox = function(container, button) {
     if (container.offsetHeight > 40) {
         container.style.height = "34px";
         button.className = "no-toc collapsed";
     } else {
-        container.style.height = "100%";
+        container.style.height = "auto";
         button.className = "no-toc";
     }
 };
@@ -18,7 +15,7 @@ if (classBoxes.length > 0) {
     for (var i = 0; i < classBoxes.length; i++) {
         toggleButtons[i] = classBoxes[i].getElementsByClassName("no-toc")[0];
         if (typeof toggleButtons[i] != "undefined") {
-            if (toggleButtons[i].innerHTML.toLowerCase() !== pageType) {
+            if (classBoxes[i].id !== pageType) {
                 toggleSideBox(classBoxes[i], toggleButtons[i]);
             }
             (function(container, button) {
@@ -29,6 +26,3 @@ if (classBoxes.length > 0) {
         }
     }
 }
-////////////////////////////
-// end script toggle sidebox
-///////////////////////////

@@ -203,8 +203,12 @@ th {
 }
 
 #main { width: 830px; position:relative;margin:0 0 0 320px;}
-#sidebar { width: 320px; margin: 0 0px;
-           position:fixed;
+#sidebar {
+   width: 320px; margin: 0 0px;
+   position:fixed;
+   height: 100%;
+   height: calc(100% - 70px);
+   overflow: auto;
 }
 
 .content { padding: 0 20px 50px 20px; }

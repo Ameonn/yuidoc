@@ -61,8 +61,12 @@
 
 /**
 * @method testImpl
-*
-*
+*/
+
+/**
+* @for Anim
+* @enum {AN_ENUM} Desc an enum
+* @value {DEFINE_5} Use for define 5
 */
 
 /**

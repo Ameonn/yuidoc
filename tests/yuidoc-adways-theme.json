@@ -3,6 +3,9 @@
     "description": "The Foo API: a library for doing X, Y, and Z",
     "options": {
         "outdir": "./out-theme",
-        "themedir": "./themes/adways"
+        "themedir": "./themes/adways",
+        "helpers": [
+            "./themes/adways/assets/js/basic-name.js"
+        ]
     }
 }
