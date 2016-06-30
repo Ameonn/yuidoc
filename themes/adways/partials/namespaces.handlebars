@@ -45,6 +45,18 @@
             </ul>
         {{/if}}
     </div>
+    <div>
+        {{#if namespaceFunctions}}
+            <p>Functions:</p>
+            <ul>
+                {{#namespaceFunctions}}
+                    <li id="{{name}}">
+                        {{>method}}
+                    </li>
+                {{/namespaceFunctions}}
+            </ul>
+        {{/if}}
+    </div>
 </div>
 <br>
 <br>
